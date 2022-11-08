@@ -1,15 +1,17 @@
-import React, { useState, useEffect } from "react";
-import AppRouter from "components/Router";
+import { Link, Route, Router, useHistory } from "react-router-dom";
+import React from "react";
+import AppRouter from "./Router";
+import Auth from "routes/Auth";
+import Test from "routes/Test";
+import Intro from "./Intro";
 import { authService } from "fbase";
-import {  Link, useHistory } from "react-router-dom";
-import Navigation from "./Navigation";
-import Navigation2 from "./Navigation2";
-
+import { useEffect } from "react";
+import { useState } from "react";
+import Log from "./Log";
 
 function App() {
   const [init, setInit] = useState(false);
   const [userObj, setUserObj] = useState(null);
-  let history = useHistory();
   useEffect(() => {
     authService.onAuthStateChanged((user) => {
       if (user) {
@@ -32,28 +34,38 @@ function App() {
       updateProfile: (args) => user.updateProfile(args),
     });
   };
-
-  const gotoTest = () => {
-    history.push({
-      pathname: `/test`
-    });
-  };
-
   return (
     <>
-      {init ? (
-        
-        <AppRouter
-          refreshUser={refreshUser}
-          isLoggedIn={Boolean(userObj)}
-          userObj={userObj}
-        />
-      ) : (
-        <>
-        
-        </>
-      )}
-    </>
+    <div>
+    <Link to={"/test"}> 
+      <button>
+        test
+      </button>
+    </Link>
+
+    <Link to={"/log"}> 
+    
+      <button>
+        로그인/회원가입
+      </button>
+    </Link>
+
+    <Link to={"/"}> 
+      <button>
+        home
+    </button>
+    </Link>
+    </div>
+    <Route exact path="/log">
+      <Log />
+    </Route>
+    <Route exact path="/test">
+      <Test />
+    </Route>
+    <Route exact path="/">
+      <Intro />
+    </Route>
+      </>
   );
 }
 

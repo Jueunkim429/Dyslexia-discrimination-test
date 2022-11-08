@@ -1,13 +1,12 @@
-import React from "react";
-import { authService, firebaseInstance } from "fbase";
-import AuthForm from "components/AuthForm";
-import { useState } from "react";
-import { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import AppRouter from "components/Router";
-
-const Auth = () => {
+import { authService } from "fbase";
+import {useHistory } from "react-router-dom";
+import Auth from "routes/Auth";
+function Log() {
   const [init, setInit] = useState(false);
   const [userObj, setUserObj] = useState(null);
+  let history = useHistory();
   useEffect(() => {
     authService.onAuthStateChanged((user) => {
       if (user) {
@@ -30,25 +29,21 @@ const Auth = () => {
       updateProfile: (args) => user.updateProfile(args),
     });
   };
-  const onSocialClick = async (event) => {
-    const {
-      target: { name },
-    } = event;
-    let provider;
-    if (name === "google") {
-      provider = new firebaseInstance.auth.GoogleAuthProvider();
-    } 
-    await authService.signInWithPopup(provider);
-  };
+
   return (
-    <div>
-      <AuthForm />
-      <div>
-        <button onClick={onSocialClick} name="google">
-          Continue with Google
-        </button>
-      </div>
-    </div>
+    <>
+      {init ? (
+        <AppRouter
+          refreshUser={refreshUser}
+          isLoggedIn={Boolean(userObj)}
+          userObj={userObj}
+        />
+      ) : (
+        <>
+        </>
+      )}
+    </>
   );
-};
-export default Auth;
+}
+
+export default Log;
