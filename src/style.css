@@ -1,12 +1,24 @@
 /*all*/
 .all_button{
-    width: 20%;
-    height: 10%;
+    width: 10%;
     border: 0;
     outline: 0;
-    border-radius: 2%;
+    border-radius: 1em;
+    padding: 1%;
+    text-align: center;
     background-color: #AFD485;
+    font-size:x-large;
+    color: white;
+    cursor: pointer;
 }
+
+/*Intro*/
+.intro_logo{
+    margin: auto;
+    display: block;
+    width:50%;
+}
+
 /*QNA*/
 .qna_form{
     width: 100%;

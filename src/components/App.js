@@ -8,6 +8,7 @@ import { authService } from "fbase";
 import { useEffect } from "react";
 import { useState } from "react";
 import Log from "./Log";
+import "../style.css";
 
 function App() {
   const [init, setInit] = useState(false);
@@ -37,24 +38,25 @@ function App() {
   return (
     <>
     <div>
+      
+    <Link to={"/"}> 
+    <button className="all_button">
+        Home
+    </button>
+    </Link>
     <Link to={"/test"}> 
-      <button>
-        test
+      <button className="all_button">
+        Test
       </button>
     </Link>
 
     <Link to={"/log"}> 
     
-      <button>
-        로그인/회원가입
+    <button className="all_button">
+        User
       </button>
     </Link>
 
-    <Link to={"/"}> 
-      <button>
-        home
-    </button>
-    </Link>
     </div>
     <Route exact path="/log">
       <Log />
