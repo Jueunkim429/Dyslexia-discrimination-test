@@ -5,6 +5,7 @@ function Intro() {
     return(
         <>
         <img className="intro_logo" src="img/main.png" />
+        <img src="main.png"></img>
 
         <img className="intro_step" src="img/step1.png"/>
         <img className="intro_step" src="img/step2.png"/>

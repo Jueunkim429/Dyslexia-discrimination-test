@@ -1,6 +1,5 @@
 import { authService, dbService, storageService } from "fbase";
 import { useState } from "react";
-import { v4 as uuidv4 } from "uuid";
 import { useHistory } from "react-router-dom";
 import "../style.css";
 import { useEffect } from "react";
@@ -88,46 +87,44 @@ function My({ refreshUser, userObj }) {
   console.log(reservelist)
     return(
       <>
-      <p>마이페이지입니다.</p>
-
-      <div>
-        <form onSubmit={onSubmit2}>
-        <input
-          onChange={onChange2}
-          type="text"
-          autoFocus
-          placeholder="닉네임"
-          value={newDisplayName}
-        />
-        <input
-          type="submit"
-          value="변경"
-          style={{
-            marginTop: 10,
-          }}
-        />
-        </form>
-      </div>
-
-      <div>
-        <form onSubmit={onSubmit} className="qna_form">
-          <div>
-            <div>
-              예약날짜 : &nbsp;
+      <br></br>
+      <div className="my_main">
+        <div>
+          <form onSubmit={onSubmit2}  className="my_name">
+            <input
+              onChange={onChange2}
+              type="text"
+              autoFocus
+              placeholder="이름"
+              value={newDisplayName}
+              className="my_text"
+            />
+            <input
+              type="submit"
+              value="확인"
+              className="my_button"
+            />
+          </form>
+        </div>
+        <div>
+          <form onSubmit={onSubmit}>
+            <div className="my_reserve">
+            <br></br>
                 <input
-                  value={reserve}
-                  className="qna_input"
-                  onChange={onChange}
-                  type="date"
+                    value={reserve}
+                    className="my_date"
+                    onChange={onChange}
+                    type="date"
                 />
+                <input className="my_button" type="submit" value="예약하기" />
             </div>
-            <input className="all_button" type="submit" value="예약하기" />
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
 
+<br></br>
       <div>
-      {reservelist.map((reservelists) => {
+        {reservelist.map((reservelists) => {
         if (reservelists.creatorId === userObj.uid)
         return(
         <Reserve
@@ -137,8 +134,6 @@ function My({ refreshUser, userObj }) {
         />
         );
       })}
-      
-
       </div>
 
        <button className="all_button" onClick={onLogOutClick}>
