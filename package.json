@@ -13,6 +13,7 @@
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
     "firebase": "^9.6.1",
+    "gh-pages": "^4.0.0",
     "npm": "^8.15.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -49,5 +50,6 @@
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "install": "^0.13.0"
-  }
+  },
+  "homepage": "https://Jueunkim429.github.io/Dyslexia-discrimination-test"
 }
