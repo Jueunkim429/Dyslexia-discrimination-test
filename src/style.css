@@ -25,10 +25,10 @@
 }
 
 .intro_step{
-    display: flex;
-    flex-direction: column;
-    width:auto;
-    margin: 10%;
+    margin: auto;
+    display: block;
+    width:80%;
+    margin-bottom: 10%;
 }
 
 /*My*/
