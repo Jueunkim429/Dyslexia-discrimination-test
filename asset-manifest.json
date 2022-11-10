@@ -1,14 +1,19 @@
 {
   "files": {
-    "main.css": "/Dyslexia-discrimination-test/static/css/main.2c5ff802.css",
-    "main.js": "/Dyslexia-discrimination-test/static/js/main.32fb8d74.js",
+    "main.css": "/Dyslexia-discrimination-test/static/css/main.465317b0.css",
+    "main.js": "/Dyslexia-discrimination-test/static/js/main.ebc7c8a3.js",
+    "static/media/dyslexia.png": "/Dyslexia-discrimination-test/static/media/dyslexia.b6425fe4fde93d9484ce.png",
+    "static/media/step1.png": "/Dyslexia-discrimination-test/static/media/step1.1a3fbd01647166d7df92.png",
+    "static/media/step2.png": "/Dyslexia-discrimination-test/static/media/step2.30a271e3384e7d146aa3.png",
+    "static/media/step3.png": "/Dyslexia-discrimination-test/static/media/step3.5cd42af4b569cc652bcf.png",
     "static/media/none.png": "/Dyslexia-discrimination-test/static/media/none.9c8bd44cd1c64ba419c3.png",
+    "static/media/main.png": "/Dyslexia-discrimination-test/static/media/main.d5d9a802c92f63f69fe6.png",
     "index.html": "/Dyslexia-discrimination-test/index.html",
-    "main.2c5ff802.css.map": "/Dyslexia-discrimination-test/static/css/main.2c5ff802.css.map",
-    "main.32fb8d74.js.map": "/Dyslexia-discrimination-test/static/js/main.32fb8d74.js.map"
+    "main.465317b0.css.map": "/Dyslexia-discrimination-test/static/css/main.465317b0.css.map",
+    "main.ebc7c8a3.js.map": "/Dyslexia-discrimination-test/static/js/main.ebc7c8a3.js.map"
   },
   "entrypoints": [
-    "static/css/main.2c5ff802.css",
-    "static/js/main.32fb8d74.js"
+    "static/css/main.465317b0.css",
+    "static/js/main.ebc7c8a3.js"
   ]
 }
