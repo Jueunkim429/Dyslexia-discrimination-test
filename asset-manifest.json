@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Jueunkim429/Dyslexia-discrimination-test/static/css/main.351257b0.css",
+    "main.js": "/Jueunkim429/Dyslexia-discrimination-test/static/js/main.3970abd8.js",
+    "static/media/none.png": "/Jueunkim429/Dyslexia-discrimination-test/static/media/none.9c8bd44cd1c64ba419c3.png",
+    "index.html": "/Jueunkim429/Dyslexia-discrimination-test/index.html",
+    "main.351257b0.css.map": "/Jueunkim429/Dyslexia-discrimination-test/static/css/main.351257b0.css.map",
+    "main.3970abd8.js.map": "/Jueunkim429/Dyslexia-discrimination-test/static/js/main.3970abd8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.351257b0.css",
+    "static/js/main.3970abd8.js"
+  ]
+}
