@@ -127,13 +127,16 @@ function My({ refreshUser, userObj }) {
       </div>
 
       <div>
-      {reservelist.map((reservelists) => (
-          <Reserve
-            key={reservelists.id}
-            reserveObj={reservelists}
-            isOwner={reservelists.creatorId === userObj.uid}
-          />
-        ))}
+      {reservelist.map((reservelists) => {
+        if (reservelists.creatorId === userObj.uid)
+        return(
+        <Reserve
+          key={reservelists.id}
+          reserveObj={reservelists}
+          isOwner={reservelists.creatorId === userObj.uid}
+        />
+        );
+      })}
       
 
       </div>
