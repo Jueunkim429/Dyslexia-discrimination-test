@@ -21,13 +21,13 @@
 .intro_logo{
     margin: auto;
     display: block;
-    width:50%;
+    width:70%;
 }
 
 .intro_step{
     margin: auto;
     display: block;
-    width:80%;
+    width:100%;
     margin-bottom: 10%;
 }
 
@@ -45,8 +45,10 @@
 
 .my_text{
     width: auto;
-    border: 1 solid #AFD485;
-    border-bottom:1 solid #AFD485;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid #4F6044;
     padding: 0.5%;
     margin-left: 1%;
     /*text-align: center;*/
@@ -74,8 +76,10 @@
 
 .my_date{
     width: auto;
-    border: 1 solid #AFD485;
-    border-bottom:1 solid #AFD485;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid #4F6044;
     padding: 0.5%;
     margin-left: 1%;
     /*text-align: center;*/
