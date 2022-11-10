@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Dyslexia-discrimination-test/static/css/main.670b4305.css",
-    "main.js": "/Dyslexia-discrimination-test/static/js/main.a69c0893.js",
+    "main.css": "/Dyslexia-discrimination-test/static/css/main.7a03b12e.css",
+    "main.js": "/Dyslexia-discrimination-test/static/js/main.e1fa5fd9.js",
     "static/media/none.png": "/Dyslexia-discrimination-test/static/media/none.9c8bd44cd1c64ba419c3.png",
     "index.html": "/Dyslexia-discrimination-test/index.html",
-    "main.670b4305.css.map": "/Dyslexia-discrimination-test/static/css/main.670b4305.css.map",
-    "main.a69c0893.js.map": "/Dyslexia-discrimination-test/static/js/main.a69c0893.js.map"
+    "main.7a03b12e.css.map": "/Dyslexia-discrimination-test/static/css/main.7a03b12e.css.map",
+    "main.e1fa5fd9.js.map": "/Dyslexia-discrimination-test/static/js/main.e1fa5fd9.js.map"
   },
   "entrypoints": [
-    "static/css/main.670b4305.css",
-    "static/js/main.a69c0893.js"
+    "static/css/main.7a03b12e.css",
+    "static/js/main.e1fa5fd9.js"
   ]
 }
