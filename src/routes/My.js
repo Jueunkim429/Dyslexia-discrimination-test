@@ -23,7 +23,8 @@ function My({ refreshUser, userObj }) {
       return;
     }
     event.preventDefault();
-    let attachmentUrl = "https://firebasestorage.googleapis.com/v0/b/dyslexia-discrimination-test.appspot.com/o/dyslexia.png?alt=media&token=7e0546a1-6088-4f73-8553-107e07d8b24c";
+    let createdAt = Date.now()
+    let attachmentUrl = `https://firebasestorage.googleapis.com/v0/b/dyslexia-discrimination-test.appspot.com/o/image%2F${createdAt}%2Fnone.png?alt=media`;
     if (attachment !== "") {
       const attachmentRef = storageService
         .ref()
@@ -31,11 +32,13 @@ function My({ refreshUser, userObj }) {
       const response = await attachmentRef.putString(attachment, "data_url");
       attachmentUrl = await response.ref.getDownloadURL();
     }
+    let testtext ="아직 없음"
     const reserveObj = {
       date: reserve,
-      createdAt: Date.now(),
+      createdAt: createdAt,
       creatorId: userObj.uid,
       userName:userObj.displayName,
+      test : testtext,
       attachmentUrl,
     };
     await dbService.collection("reserve").add(reserveObj);
