@@ -136,9 +136,11 @@ function My({ refreshUser, userObj }) {
       })}
       </div>
 
+      <div className="all_button_space">
        <button className="all_button" onClick={onLogOutClick}>
           Log Out
         </button>
+        </div>
       </>
         );
     }
