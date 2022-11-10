@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/Dyslexia-discrimination-test/static/css/main.351257b0.css",
-    "main.js": "/Dyslexia-discrimination-test/static/js/main.cb350182.js",
+    "main.css": "/Dyslexia-discrimination-test/static/css/main.8f1be9be.css",
+    "main.js": "/Dyslexia-discrimination-test/static/js/main.bedadcc6.js",
     "static/media/none.png": "/Dyslexia-discrimination-test/static/media/none.9c8bd44cd1c64ba419c3.png",
+    "static/media/main.png": "/Dyslexia-discrimination-test/static/media/main.d5d9a802c92f63f69fe6.png",
     "index.html": "/Dyslexia-discrimination-test/index.html",
-    "main.351257b0.css.map": "/Dyslexia-discrimination-test/static/css/main.351257b0.css.map",
-    "main.cb350182.js.map": "/Dyslexia-discrimination-test/static/js/main.cb350182.js.map"
+    "main.8f1be9be.css.map": "/Dyslexia-discrimination-test/static/css/main.8f1be9be.css.map",
+    "main.bedadcc6.js.map": "/Dyslexia-discrimination-test/static/js/main.bedadcc6.js.map"
   },
   "entrypoints": [
-    "static/css/main.351257b0.css",
-    "static/js/main.cb350182.js"
+    "static/css/main.8f1be9be.css",
+    "static/js/main.bedadcc6.js"
   ]
 }
