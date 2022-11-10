@@ -1,7 +1,5 @@
 import { Link, Route, Router, useHistory } from "react-router-dom";
 import React from "react";
-import AppRouter from "./Router";
-import Auth from "routes/Auth";
 import Test from "routes/Test";
 import Intro from "./Intro";
 import { authService } from "fbase";

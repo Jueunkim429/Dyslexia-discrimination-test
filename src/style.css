@@ -24,6 +24,13 @@
     width:50%;
 }
 
+.intro_step{
+    display: flex;
+    flex-direction: column;
+    margin: 10%;
+    background-color: rgb(255, 205, 237);
+}
+
 /*QNA*/
 .qna_form{
     width: 100%;
