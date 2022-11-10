@@ -89,6 +89,9 @@
     background-color: rgb(254, 254, 254);
     margin-left: 10%;
     margin-right: 10%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    padding-top: 1%;
 }
 .reserve_title{
     text-align: center;
