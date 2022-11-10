@@ -37,27 +37,20 @@ function App() {
   };
   return (
     <>
-    <div>
-      
-    <Link to={"/"}> 
-    <button className="all_button">
-        Home
-    </button>
-    </Link>
-    <Link to={"/test"}> 
+    <div className="all_button_space">
+      <Link to={"/"}> 
       <button className="all_button">
-        Test
+          Home
       </button>
-    </Link>
-
-    <Link to={"/log"}> 
-    
+      </Link>
+      
+      <Link to={"/log"}> 
     <button className="all_button">
         User
       </button>
     </Link>
-
     </div>
+
     <Route exact path="/log">
       <Log />
     </Route>

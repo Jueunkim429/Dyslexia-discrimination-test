@@ -1,11 +1,16 @@
 /*all*/
+.all_button_space{
+    text-align: right;
+}
+
 .all_button{
     width: 10%;
     border: 0;
     outline: 0;
-    border-radius: 1em;
-    padding: 1%;
-    text-align: center;
+    border-radius: 0.8em;
+    padding: 0.5%;
+    margin-left: 1%;
+    /*text-align: center;*/
     background-color: #AFD485;
     font-size:x-large;
     color: white;
