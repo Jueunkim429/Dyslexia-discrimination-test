@@ -24,7 +24,7 @@ function My({ refreshUser, userObj }) {
     event.preventDefault();
     let createdAt = Date.now()
     
-    let attachmentUrl = `https://firebasestorage.googleapis.com/v0/b/dyslexia-discrimination-test.appspot.com/o/image%2F${createdAt}%2Fimg.jpeg?alt=media`;
+    let attachmentUrl = `https://firebasestorage.googleapis.com/v0/b/dyslexia-discrimination-test.appspot.com/o/image%2F${createdAt}%2Fimg.png?alt=media`;
     //let attachmentUrl = "";
     if (attachment !== "") {
       const attachmentRef = storageService
