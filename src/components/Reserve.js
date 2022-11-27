@@ -1,6 +1,6 @@
 import React from "react";
 import default_Img from "./none.png";
-import default_Img2 from "./dyslexia.png";
+import default_Img2 from "./dyslexia.jpg";
 const Reserve= ({reserveObj, isOwner}) => {
     const onErrorImg = (e) => {
         e.target.src = default_Img;
@@ -21,7 +21,7 @@ const Reserve= ({reserveObj, isOwner}) => {
         
             <div className="reserve_img">
                 <div className="reserve_detailimg">
-                    <img src="img/dyslexia.png" className="reserve_dy" onError={onErrorImg2} />
+                    <img src="img/dyslexia.jpg" className="reserve_dy" onError={onErrorImg2} />
                     <p>[난독증]</p>
                 </div>
 
